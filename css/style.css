@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import "null.css";
+
+.wrapper {
+	font-family: "lato", sans-serif;
+	font-style: normal;
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 810px;
+	margin: 0 auto;
+	background: blanchedalmond;
+}
+.title {
+	font-size: 30px;
+	font-weight: 900;
+	color: rgb(178, 178, 196);
+	background: cornflowerblue;
+	text-align: center;
+	border-radius: 20px;
+	margin: 20px 0 30px 0;
+}
+.block1 {
+	font-size: 30px;
+	padding: 30px 0 0 5px;
+	width: 100px;
+	height: 100px;
+	border-radius: 8px;
+	color: bisque;
+	background-color: brown;
+}
+.block2 {
+	width: 50px;
+	height: 350px;
+	background-color: blueviolet;
+}
+.block3 {
+	width: 400px;
+	height:20px ;
+	background-color: chartreuse;
+}
+.block4 {
+	width: 15px;
+	height: 300px;
+	margin-left: 384px;
+	background-color: coral;
+}
+.block5 a {
+	font-size: 30px;
+	width: 100px;
+	height: 100px;
+	padding: 30px 0 0 6px;
+	display: inline-block;
+	margin: 0 0 0 340px;
+	border-radius: 8px;
+	color: blanchedalmond;
+	background-color: rgb(168, 41, 37);
+}
+.block1:hover {
+	box-shadow: 3px 5px 0px 8px #531614;
+	color: chartreuse;
+	text-decoration: underline rgb(169, 172, 36);
+}
+.block5 a:active {
+	box-shadow: 3px 5px 0px 8px #531614;
+	text-decoration: underline rgb(169, 172, 36);
+	color: chartreuse;
+}
+.block2,.block3,.block4,.block5 {
+	visibility: hidden;
+}
+
+.block1:hover + .block2 {
+	visibility: visible;
+}
+.block2:hover {
+	visibility: visible;
+}
+.block2:hover + .block3 {
+	visibility: visible;
+}
+.block3:hover {
+	visibility: visible;
+}
+.block3:hover + .block4 {
+	visibility: visible;
+}
+.block4:hover {
+	visibility: visible;
+}
+.block4:hover + .block5 {
+	visibility: visible;
+}
+.block5:hover {
+	visibility: visible;
+}
+.image {
+	margin: -600px auto;
+	display: none;
+}
+.image img {
+	max-width: 100%;
+	width: 100%;
+}
+#image:target{ 
+	display: block;
+} 
